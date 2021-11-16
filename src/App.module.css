@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.AppBar {
+  min-height: 3em;
+  display: flex;
+  align-items: center;
+}
+
+.AppContent {
+  margin-top: 4em;
+}
