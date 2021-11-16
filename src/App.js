@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className={styles.App}>
-      <Router>
+      <Router base={process.env.PUBLIC_URL}>
         <WeatherAppBar />
         <div className={styles.AppContent}>
           <Routes>
