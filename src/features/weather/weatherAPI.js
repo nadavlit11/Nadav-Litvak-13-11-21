@@ -13,7 +13,7 @@ export function autoComplete(q = "") {
 export function getFiveDaysForecast(cityCode) {
   return fetch(
     encodeURI(
-      `${API_BASE_URL}${getFiveDaysForecastUrl}${cityCode}?apikey=${apiKey}`
+      `${API_BASE_URL}${getFiveDaysForecastUrl}${cityCode}?apikey=${apiKey}&metric=true`
     )
   ).then(async (res) => await res.json());
 }

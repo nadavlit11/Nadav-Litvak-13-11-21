@@ -32,8 +32,14 @@
 
 .ForecastBottom {
   display: flex;
+  justify-content: space-around;
+  gap: 1em;
 }
 
 .ForecastCard {
   flex-grow: 2.4;
+}
+
+.ForecastCard > div {
+  margin: 1em 0;
 }

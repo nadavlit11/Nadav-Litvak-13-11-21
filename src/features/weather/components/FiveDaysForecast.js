@@ -43,23 +43,23 @@ export default function FiveDaysForecast() {
       <div className={styles.ForecastBottom}>
         <Card className={styles.ForecastCard}>
           <div>{getDayOfTheWeek(forecast?.DailyForecasts[0].Date)}</div>
-          {forecast?.DailyForecasts[0].Temperature.Maximum.Value}
+          <div>{forecast?.DailyForecasts[0].Temperature.Maximum.Value}</div>
         </Card>
         <Card className={styles.ForecastCard}>
           <div>{getDayOfTheWeek(forecast?.DailyForecasts[1].Date)}</div>
-          {forecast?.DailyForecasts[1].Temperature.Maximum.Value}
+          <div>{forecast?.DailyForecasts[1].Temperature.Maximum.Value}</div>
         </Card>
         <Card className={styles.ForecastCard}>
           <div>{getDayOfTheWeek(forecast?.DailyForecasts[2].Date)}</div>
-          {forecast?.DailyForecasts[2].Temperature.Maximum.Value}
+          <div>{forecast?.DailyForecasts[2].Temperature.Maximum.Value}</div>
         </Card>
         <Card className={styles.ForecastCard}>
           <div>{getDayOfTheWeek(forecast?.DailyForecasts[3].Date)}</div>
-          {forecast?.DailyForecasts[3].Temperature.Maximum.Value}
+          <div>{forecast?.DailyForecasts[3].Temperature.Maximum.Value}</div>
         </Card>
         <Card className={styles.ForecastCard}>
           <div>{getDayOfTheWeek(forecast?.DailyForecasts[4].Date)}</div>
-          {forecast?.DailyForecasts[4].Temperature.Maximum.Value}
+          <div>{forecast?.DailyForecasts[4].Temperature.Maximum.Value}</div>
         </Card>
       </div>
     </Container>

@@ -1,13 +1,24 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { selectFavorites } from "../weatherSlice";
+import { Container, Card } from "@mui/material";
+import styles from "./Favorites.module.css";
 
 export default function Favorites() {
   const favorites = useSelector(selectFavorites);
   let favoritesHtml = [];
   for (const key in favorites) {
-    favoritesHtml.push(<span>{favorites[key].Temperature.Metric.Value}</span>);
+    favoritesHtml.push(
+      <Card className={styles.favCard}>
+        <div>{favorites[key].CityName}</div>
+        <div>{favorites[key].Temperature.Metric.Value}</div>
+      </Card>
+    );
   }
 
-  return <div>{favoritesHtml}</div>;
+  return (
+    <Container id={styles.favoritesId} className={styles.favorites}>
+      {favoritesHtml}
+    </Container>
+  );
 }
